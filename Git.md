@@ -80,7 +80,7 @@
 
 
 
-# 2.Git的使用
+# 2. Git的使用
 
 1. 因为Git是分布式版本控制系统，所以需要填写用户名和邮箱作为一个标识，右键，git bash here输入以下命令
 
@@ -285,7 +285,7 @@ git log --graph --pretty=oneline --abbrev-commit
 git branch -d f1
 ```
 
-# Github删除仓库
+# 3. Github删除仓库
 
 1. 打开你的仓库
 
@@ -311,7 +311,7 @@ git branch -d f1
 
 7. 然后就删除了
 
-# 把本地仓库上传到github
+# 4. 把本地仓库上传到github
 
 1. 先把本地的一个目录变成git可管理的仓库，
 
@@ -357,4 +357,16 @@ git branch -d f1
    git push -u origin master
    ```
 
-   
+10. 失败，因为创建的不是空的仓库，所以需要先把说明文档下下来，完了再执行第9步
+
+    ```
+    git pull --rebase origin master
+    ```
+
+11. 第一次提交需要加上**-u**参数，以后就不用了
+
+    ```
+    git push origin master
+    ```
+
+12. 注意：是git管理仓库的目录下的内容不会同步
