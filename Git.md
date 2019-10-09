@@ -307,7 +307,7 @@ git branch -d f1
 
 6. 然后输入Github密码，确保是本人登录
 
-   ![6](C:\Users\Administrator\Desktop\hyzh\image\Github\6.png)
+   ![5](C:\Users\Administrator\Desktop\hyzh\image\Github\5.png)
 
 7. 然后就删除了
 
@@ -319,4 +319,42 @@ git branch -d f1
    git init
    ```
 
-2. 
+2. 添加该目录下的所有文件以及目录到暂存区
+
+   ```
+   git add .
+   ```
+
+3.  提交
+
+   ```
+   git commit -m "说明注释"
+   ```
+
+4. 本人已经设置过SSH KEY了，这里不再重复
+
+5. 在Github添加一个仓库（Repository），
+
+   Repository name：项目名
+
+   Description (optional)：项目描述
+
+6. 勾选这个，会在仓库生成一个说明文件
+
+   ![6](C:\Users\Administrator\Desktop\hyzh\image\Github\6.png)
+
+7. 创建好之后，复制SSH地址
+
+8. 关联
+
+   ```
+   git remote add origin git@github.com:hyzhben/Study2019.git
+   ```
+
+9. 推送
+
+   ```
+   git push -u origin master
+   ```
+
+   
